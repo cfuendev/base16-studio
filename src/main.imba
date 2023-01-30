@@ -42,8 +42,8 @@ tag picker
 		if mouseIsDown
 			const x = e.clientX
 			const y = e.clientY
-			marker.x = x - 10
-			marker.y = y - 10
+			marker.x = x - 11
+			marker.y = y - 11
 			const canvas = self.children[0]
 			const bcr = canvas.getBoundingClientRect();
 			let pixelRGB = canvas.getContext('2d').getImageData(x - bcr.x,y - bcr.y,1,1)['data']
