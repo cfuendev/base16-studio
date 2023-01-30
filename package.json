@@ -1,6 +1,6 @@
 {
   "name": "base16-studio",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "start": "vite",
@@ -14,6 +14,7 @@
     "vite-plugin-imba": "^0.10.2"
   },
   "dependencies": {
+    "color-convert": "^2.0.1",
     "prismjs": "^1.29.0"
   }
 }

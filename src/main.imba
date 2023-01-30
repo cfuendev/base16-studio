@@ -1,4 +1,5 @@
 import Prism from 'prismjs';
+import convert from 'color-convert';
 
 global css @root bg:black/60 c:white
 
@@ -64,7 +65,8 @@ tag picker
 			# create a new horizontal gradient
 			gradientH = ctx.createLinearGradient(0, 0, ctx.canvas.width, 0)
 			gradientH.addColorStop(0, '#fff')
-			gradientH.addColorStop(1, '#'+data.color)
+			const hsl = convert.hex.hsl(data.color)
+			gradientH.addColorStop(1, '#'+convert.hsl.hex([hsl[0],100,50]))
 			ctx.fillStyle = gradientH
 			ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height)
 
