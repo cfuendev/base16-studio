@@ -11,8 +11,9 @@ A tool to visually design base16 themes.
 - [x] Overall Layout
 - [ ] Color picker
   - [x] Breaks HEX values down to HSL to display the picker canvas correctly
-  - [ ] Changes selected palette color to whatever is selected in the color picker
-  - [ ] Supports RGBA, HSLA, HWBA, LCHA and HEX
+  - [x] Changes selected palette color to whatever is selected in the color picker
+  - [ ] Supports RGBA, HSLA, HWBA, LCHA and HEX color codes
+  - [ ] Sliders
 - [ ] Highlighted code preview
   - [ ] Works but is not editable, uses default code (Prism.js)
   - [ ] Works but is editable (Prism.js workaround)
