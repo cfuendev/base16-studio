@@ -9,25 +9,27 @@ global css @root bg:black/60 c:white
 
 tag preview
 	<self>
-		<pre[m:0 h:300px w:312.8px bgc:white c:black]> "codigo"
+		<pre[m:0 rd:5px h:300px w:312.8px bgc:white c:black]> "codigo"
 
 tag palette
 	def paletteColorClick color
 		data.color = color
 
 	css d:hflex w:auto
-	css div
+	css div h:30px w:19.55px 
+	css div > div
 		h:30px w:19.55px ead:120ms eaf:cubic-out
-		y@hover:5px
-		y@active:10px filter@active:brightness(200%)
+	css div@hover > div y:5px
+	css div@active > div y:10px filter:brightness(200%)
 	<self>
 		for color in data.colors
-			<div[bgc:{'#'+color}] @click=paletteColorClick(color)>
+			<div @click=paletteColorClick(color)>
+				<div[bgc:{'#'+color}]>
 
 tag picker
-	css p:16px bw:1px bs:dashed bc:black
+	css rd:5px p:16px bw:1px bs:dashed bc:black
 	<self>
-		<canvas id="color_canvas"/>
+		<canvas[rd:5px] id="color_canvas"/>
 		<div[bgc:{'#'+data.color} w:30px h:19.55px ead:120ms eaf:cubic-out]>
 
 	def mount
