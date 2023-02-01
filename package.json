@@ -11,10 +11,12 @@
   "devDependencies": {
     "imba": "^2.0.0-alpha.227",
     "vite": "^4.0.4",
-    "vite-plugin-imba": "^0.10.2"
+    "vite-plugin-imba": "^0.10.2",
+    "vite-plugin-monaco-editor": "^1.1.0"
   },
   "dependencies": {
     "color-convert": "^2.0.1",
+    "monaco-editor": "^0.34.1",
     "prismjs": "^1.29.0"
   }
 }

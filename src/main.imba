@@ -1,5 +1,5 @@
-import Prism from 'prismjs';
 import convert from 'color-convert';
+import * as monaco from 'monaco-editor';
 
 global css @root bg:black/60 c:white
 
@@ -8,8 +8,19 @@ global css @root bg:black/60 c:white
 # https://dev.to/bhaskar95460442/create-an-html-color-picker-using-javascript-3obm
 
 tag preview
-	<self>
-		<pre[m:0 rd:5px h:300px w:312.8px bgc:white c:black]> "codigo"
+	def awaken
+		console.log "epa"
+
+		<self>
+			<div#mona-container[m:0 rd:5px h:300px w:312.8px of:clip bgc:white c:black]>
+
+	def mount
+		# create monaco
+		console.log "hiiii"
+		monaco.editor.create(document.getElementById('mona-container'), {
+			value: '',
+			language: 'javascript',
+		})
 
 tag palette
 	def paletteColorClick color

@@ -15,8 +15,9 @@ A tool to visually design base16 themes.
   - [ ] Supports RGBA, HSLA, HWBA, LCHA and HEX color codes
   - [ ] Sliders
 - [ ] Highlighted code preview
-  - [ ] Works but is not editable, uses default code (Prism.js)
-  - [ ] Works but is editable (Prism.js workaround)
+  - [x] Preview text exists? (Monaco is in)
+  - [ ] Preview text is not broken (Monaco works just fine)
+  - [ ] Preview text actually previews the palette (Monarch syntax highlighting)
 
 # Installation
 ```
