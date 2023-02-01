@@ -1,7 +1,7 @@
 import convert from 'color-convert';
 import * as monaco from 'monaco-editor';
 
-global css @root bg:black/60 c:white
+global css @root bg:black/60
 
 # RGB, HSL, LCH and HEX 
 
@@ -9,24 +9,25 @@ global css @root bg:black/60 c:white
 
 tag preview
 	def awaken
-		console.log "epa"
-
 		<self>
-			<div#mona-container[m:0 rd:5px h:300px w:312.8px of:clip bgc:white c:black]>
+			<div#mona-container[rd:5px h:300px w:312.8px of:clip bgc:white c:black]>
 
 	def mount
 		# create monaco
 		console.log "hiiii"
 		monaco.editor.create(document.getElementById('mona-container'), {
-			value: '',
+			value: 'qué?',
 			language: 'javascript',
+			minimap: {
+				enabled: false
+			}
 		})
 
 tag palette
 	def paletteColorClick color
 		data.color = data.colors.indexOf(color)
 
-	css d:hflex w:auto
+	css d:hflex
 	css div h:30px w:19.55px 
 	css div > div
 		h:30px w:19.55px ead:120ms eaf:cubic-out
